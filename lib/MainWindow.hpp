@@ -33,12 +33,10 @@ public:
 
 private slots:
     void on_pb_button_toggled(bool) {
-        if (ui->pb_button->isChecked()) {
-            if (ui->pb_bar->value() == 10)
-                ui->pb_bar->setValue(0);
-            else 
-                ui->pb_bar->setValue(ui->pb_bar->value() + 1);
-        }
+        if (ui->pb_bar->value() == 10)
+            ui->pb_bar->setValue(0);
+        else 
+            ui->pb_bar->setValue(ui->pb_bar->value() + 1);
     }
 
 private:
